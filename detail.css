@@ -1,0 +1,209 @@
+.det-page-container{
+    display: flex;
+    justify-content: center ;
+}
+
+.detail-container{
+    display:grid;
+    row-gap: 2ex;
+    min-width: 90vmin;
+    max-width: 80ch;
+    font-size:2vw;
+}
+
+.author-container{
+    display:flex;
+    flex-direction: row;
+}
+
+.det-author{
+    padding-right: 1em;
+    font-size:2vw;
+}
+
+.det-author::before{
+    content: "✍️ ";
+    font-size:2vw;
+}
+
+.det-article-type{
+    font-size: large;
+    color:gray;
+    padding-top:2ex;
+    font-size:3vw;
+    text-decoration: underline;
+}
+
+.det-title{
+    font-size: larger;
+    color: cornflowerblue;
+    font-size:4vw;
+}
+
+/*.det-abstract::before{
+    content:"Abstract";
+}*/
+
+.det-abstract::before{
+    content:"Abstract\a";
+    white-space: pre;
+    font-size:3vw;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.det-abstract::first-line{
+    color:darkred;
+    //font-size:larger;
+    line-height: 2em;
+    font-size:3vw;
+}
+
+.det-abstract{
+    //font-family: "'Roboto Mono', monospace;";
+    font-family: 'Mukta', sans-serif;
+    line-height: 150%;
+    background: #fafafa;
+    font-size:2vw;
+}
+
+.det-correspondence::before{
+    content:"Correspondence:";
+    color:darkred;
+    //font-size:medium;
+    font-size:1.5vw;
+    //font-weight: bold;
+    text-decoration: underline;
+}
+
+.det-received-date::before{
+    content:"Received Data:";
+    color:darkslateblue;
+    font-size:1.5vw;
+    //font-weight: bold;
+    text-decoration: underline;
+}
+
+.det-accepted-date::before{
+    content:"Accepted Date:";
+    color:darkslateblue;
+    font-size:1.5vw;
+    //font-weight: bold;
+    text-decoration: underline;
+}
+
+.det-published-date::before{
+    content:"Published Date:";
+    color:darkslateblue;
+    font-size:1.5vw;
+    //font-weight: bold;
+    text-decoration: underline;
+}
+
+.det-keywords::before{
+    content:"Keywords:";
+    color:darkred;
+    font-size:2vw;
+    //font-weight: bold;
+    text-decoration: underline;
+}
+
+.det-keywords{
+    color:darkolivegreen;
+    font-size:2vw;
+}
+
+.det-doi a{
+    color:slategray;
+}
+
+.doi-pdf-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.det-pdf{
+    justify-self: end;
+    color:slategray;
+    font-size:2vw;
+}
+
+.det-published-date, .det-accepted-date, .det-received-date, .det-correspondence{
+    font-size:1.5vw;
+}
+
+.det-volume{
+    color:darkslateblue;
+}
+
+@media (max-width: 1000px) {
+
+    .detail-container{
+        font-size:4vw;
+    }
+
+    .det-author{
+        padding-right: 1em;
+        font-size:4vw;
+    }
+
+    .det-author::before{
+        font-size:4vw;
+    }
+
+    .det-article-type{
+        font-size:4vw;
+    }
+
+    .det-title{
+        font-size:8vw;
+    }
+
+    .det-abstract::before{
+        font-size:6vw;
+    }
+
+    .det-abstract::first-line{
+        font-size:6vw;
+    }
+
+    .det-abstract{
+        font-size:4vw;
+    }
+
+    .det-correspondence::before{
+        font-size:3vw;
+    }
+
+    .det-received-date::before{
+        font-size:3vw;
+    }
+
+    .det-accepted-date::before{
+        font-size:3vw;
+    }
+
+    .det-published-date::before{
+        font-size:3vw;
+    }
+
+    .det-keywords::before{
+        font-size:4vw;
+    }
+
+    .det-keywords{
+        font-size:4vw;
+    }
+
+    .det-pdf{
+        font-size:4vw;
+    }
+
+    .det-published-date, .det-accepted-date, .det-received-date, .det-correspondence{
+        font-size:3vw;
+    }
+
+}
+
+
