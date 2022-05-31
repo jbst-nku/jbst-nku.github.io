@@ -1,25 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,300;0,400;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Julius+Sans+One&family=Play&family=Roboto+Mono:ital,wght@0,200;0,300;0,400;1,400&display=swap');
+
 .main-header{
     //color:darkslateblue;
     color:#2890D6;
-    font-family: Damascus;
-    font-size: xx-large;
+    font-family: Roboto;
+    font-size: xxx-large;
     text-align: center;
     padding: 1ex;
     margin: 1ex;
 }
 
+.issue-header{
+    color:midnightblue;
+    color:black;
+    font-family: Roboto;
+    font-size: xx-large;
+    text-align: center;
+    padding: 1ex;
+    margin: 1ex;
+    text-decoration: underline;
+    background: #f6f6ff;
+    border-radius: 1ex;
+    font-stretch: expanded;
+    //font-variant-caps: all-small-caps;
+    font-family: 'Julius Sans One';
+    font-weight: bolder;
+}
+
 .extra-container{
     display: grid;
-    grid-template-columns:  25vw 30vw 20vw;
-    gap: 2vw;
+    grid-template-columns:  25vw 35vw 20vw;
     align-items: center;
     justify-items: center;
     justify-content: space-evenly;
-
+    margin-bottom: 10ex;
 }
 
 .journal-pic, .editorial-text, .archive-links{
-    //background: #fff9ff;
     background: #f6f6ff;
     align-self: stretch;
 }
@@ -31,26 +49,28 @@
 img{
     width:30vw;
     object-fit: scale-down;
+    margin-right: 3em;
+    border-radius: 3ex ;
 }
 
 .editorial-text{
     padding: 1em;
-    border-radius: 5ex;
+    border-radius: 3ex;
 }
 
 .archive-links{
     padding: 1em;
-    border-radius: 5ex;
+    border-radius: 3ex;
 }
 
 .article-container{
     display:grid;
-    //background:#fff9ff;
     padding:2ex;
     margin: 2ex;
     row-gap: 2ex;
-    border-radius: 5ex;
+    border-radius: 3ex;
 }
+
 
 .article-authors{
     display:flex;
@@ -68,7 +88,6 @@ img{
 .article-title{
     font-size: larger;
     color: cornflowerblue;
-    //padding:1ex;
 }
 
 .article-type{
@@ -110,30 +129,31 @@ img{
     content: "Download PDF 🔗";
 }
 
-.part-a-info{
+.part-info{
     font-size: x-large;
     padding: 1ex;
     margin: 3ex;
-    //color:seagreen;
     color:black;
     font-stretch: expanded;
     font-variant-caps: all-small-caps;
-    border-radius: 5ex;
+    border-radius: 1ex;
     text-align: center;
-    border:solid #c3eae1 3px;
-    text-decoration: underline;
 }
 
-.part-a-box{
-    background: #c3eae1;
+.part-a{
+    background: #fff1e6;
 }
 
-.part-b-box{
-    background: #C1FFD7;
+.part-b{
+    background: #e2ece9;
 }
 
-.part-c-box{
-    background: #B5DEFF;
+.part-c{
+    background: #dfe7fd;
+}
+
+.part-d{
+    background: #fde2e4;
 }
 
 .part-container{
@@ -161,6 +181,27 @@ img{
 .iss-issue{
     margin-bottom: 1ex;
     font-family: 'Mukta', sans-serif;
+}
+
+@media (max-width: 1080px){
+    .extra-container{
+        display: grid;
+        grid-template-columns:  1fr;
+        align-items: center;
+        justify-items: center;
+        justify-content: space-evenly;
+        grid-auto-rows: auto;
+        grid-row-gap: 3ex;
+    }
+
+    .editorial-text, .archive-links{
+        justify-self: center;
+        width: 90%
+    }
+
+    .journal-pic{
+        width: 90%;
+    }
 }
 
 
