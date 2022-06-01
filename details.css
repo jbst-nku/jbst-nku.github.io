@@ -75,7 +75,7 @@
     content:"Correspondence:";
     color:darkred;
     font-size:1.5vw;
-    //text-decoration: underline;
+    text-decoration: underline;
 }
 
 .det-correspondence a::before{
@@ -91,7 +91,7 @@
 .det-datex-header::before{
     color:darkslateblue;
     font-size:1.5vw;
-    //text-decoration: underline;
+    text-decoration: underline;
 }
 
 .det-received-date::before{
