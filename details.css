@@ -3,6 +3,7 @@
 .det-page-container{
     display: flex;
     justify-content: center ;
+    padding-bottom: 5ex;
 }
 
 .detail-container{
@@ -65,17 +66,32 @@
     font-size:1.5vw;
 }
 
+.det-published-date, .det-accepted-date, .det-received-date, .det-correspondence, .det-cite, .det-keywords{
+    font-size:1.5vw;
+    font-family: sans-serif;
+}
+
 .det-correspondence::before{
     content:"Correspondence:";
     color:darkred;
     font-size:1.5vw;
-    text-decoration: underline;
+    //text-decoration: underline;
+}
+
+.det-correspondence a::before{
+    content:"\a📧 ➡️";
+    white-space: pre;
+    font-size:1.5vw;
+}
+.det-correspondence a{
+    text-decoration: none;
+    color:black;
 }
 
 .det-datex-header::before{
     color:darkslateblue;
     font-size:1.5vw;
-    text-decoration: underline;
+    //text-decoration: underline;
 }
 
 .det-received-date::before{
@@ -108,7 +124,8 @@
 }
 
 .det-keywords{
-    color:darkolivegreen;
+    //color:darkolivegreen;
+    font-weight: bolder;
 }
 
 .det-doi a{
@@ -129,11 +146,6 @@
     justify-self: end;
     color:slategray;
     font-size:1.5vw;
-}
-
-.det-published-date, .det-accepted-date, .det-received-date, .det-correspondence, .det-cite, .det-keywords{
-    font-size:1.5vw;
-    font-family: sans-serif;
 }
 
 .det-volume{
