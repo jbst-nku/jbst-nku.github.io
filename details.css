@@ -114,7 +114,7 @@
 
 .det-cite::before{
     font-family: sans-serif;
-    content:"Cite:";
+    content:"Cite this Article:";
     color:darkred;
 }
 
