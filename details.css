@@ -80,7 +80,7 @@
 }
 
 .det-correspondence a::before{
-    content:"\a📧";
+    content:"\a📧 ➡️";
     white-space: pre;
     font-size:1.5vw;
 }
@@ -147,6 +147,10 @@
     justify-self: end;
     color:slategray;
     font-size:1.5vw;
+}
+
+.pdf{
+    width: 3vw;
 }
 
 .det-volume{
