@@ -80,7 +80,7 @@
 }
 
 .det-correspondence a::before{
-    content:"\a📧 ➡️";
+    content:"\a📧";
     white-space: pre;
     font-size:1.5vw;
 }
