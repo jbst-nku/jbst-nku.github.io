@@ -116,7 +116,7 @@ img{
 }
 
 .article-pages::before{
-    content: "Pages: "
+    content: "Page: "
 }
 
 .article-download{
