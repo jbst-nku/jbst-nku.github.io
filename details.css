@@ -80,7 +80,7 @@
 }
 
 .det-correspondence a::before{
-    content:"\a📧";
+    content:"\a📧️";
     white-space: pre;
     font-size:1.5vw;
 }
@@ -183,7 +183,7 @@
 }
 
 .det-eissn::before{
-    content:"EISSN:";
+    content:"ISSN:";
 }
 
 .det-eissn{
