@@ -124,6 +124,12 @@
     color:chocolate;
 }
 
+.det-license::before{
+    content:"License:";
+    color:chocolate;
+}
+
+
 .det-keywords{
     //color:darkolivegreen;
     //font-weight: bolder;
@@ -261,6 +267,11 @@
 
     .det-published-date, .det-accepted-date, .det-received-date, .det-correspondence, .det-cite, .det-keywords{
         font-size:3vw;
+        font-family: sans-serif;
+    }
+
+    .det-license{
+        font-size:1.5vw;
         font-family: sans-serif;
     }
 
